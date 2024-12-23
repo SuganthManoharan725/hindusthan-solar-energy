@@ -85,7 +85,7 @@
 
 .navbar .navbar-brand,
 .navbar a.btn {
-    height: 75px;
+    height: 92px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -152,31 +152,14 @@
     left: 0;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 768px) {
-    .header-carousel .owl-carousel-item {
-        position: relative;
-        min-height: 500px;
-    }
-
-    .header-carousel .owl-carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .header-carousel .owl-carousel-item p {
-        font-size: 16px !important;
-    }
-}
 
 .header-carousel .owl-dots {
     position: absolute;
     width: 60px;
-    height: 100%;
+    height: 70%;
     top: 0;
     right: 30px;
     display: flex;
@@ -202,13 +185,15 @@
 }
 
 .header-carousel .owl-dots .owl-dot img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     padding: 2px;
     border-radius: 45px;
     transition: .5s;
+    position: absolute;
+        width: 100% !important;
+        height: 70% !important;
+        object-fit: cover !important;
+
 }
 
 .page-header {
@@ -558,8 +543,8 @@
 /*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
-    color: #9B9B9B;
-    border: 1px solid #9B9B9B;
+    color: #ffff;
+    border: 1px solid #ffff;
     border-radius: 38px;
     transition: .3s;
 }
@@ -574,7 +559,7 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #9B9B9B;
+    color: #ffff;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -600,13 +585,16 @@
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: #b95c4d;
 }
 
 .footer .copyright a:hover {
     color: var(--primary);
 }
 
+.footer .text-white {
+    color:#b95c4d !important;
+}
 
 
 
@@ -651,14 +639,14 @@
 
 @media only screen and (max-width: 768px) {
     .text-primary {
-        font-size: medium; /* Increase font size slightly for tablets */
+        font-size: 0.919rem; /* Increase font size slightly for tablets */
     }
 }
 
 /* Mobile View (portrait/landscape) */
 @media only screen and (max-width: 480px) {
     .text-primary {
-        font-size: small; /* Increase font size for mobile devices */
+        font-size: 0.919rem; /* Increase font size for mobile devices */
     }
 }
 
@@ -678,9 +666,10 @@
     }
 
     .logo-img {
-        width: 60px;
+        width: 102px;
         height: max-content;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
+        margin-top: -4px;
     }
 }
 
@@ -773,3 +762,113 @@
 }
 
 
+/** Header image **/
+@media (max-width: 768px) {
+    .header-image {
+        top: 30px;
+    position: relative;
+    }
+    .owl-carousel-inner {
+        position: absolute;
+        left: 0;
+        transform: translateY(-50%); /* Vertically center the content */
+        width: 100%;
+        text-align: left;
+    }
+    .header-carousel .owl-carousel-item {
+        position: relative;
+        height: 70vh;
+    }
+    .header-carousel .owl-carousel-item img {
+        object-fit: cover; /* Ensures the image covers the area */
+        width: 100%;
+        height: 100%; /* Make the image height match the container height */
+        display: block;
+    }
+    
+}
+
+
+/**service-details **/
+/* General styling for the service section */
+.service-header, .type-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.service-toggle, .type-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Medium size for the + icon */
+    color: #b95c4d;
+}
+
+.service-description, .type-description {
+    background-color: #f8f9fa;
+ /*   border-bottom: 0.09px solid #b95c4d; */
+    padding: 15px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    border-right: 10px solid #b95c4d;
+}
+
+/* Style for the + icon */
+.service-toggle-icon, .type-toggle-icon {
+    font-size: 1.5rem; /* Medium size for the + symbol */
+    font-weight: bold;
+}
+
+/* Add margin between different service and types */
+.service-item, .type-item {
+    margin-bottom: 1.5rem;
+}
+
+/* Additional Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .service-header, .type-header {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .service-toggle, .type-toggle {
+        font-size: 1.25rem; /* Adjust icon size for mobile */
+    }
+
+    .service-description, .type-description {
+        padding: 10px 15px;
+    }
+
+    .service-toggle-icon, .type-toggle-icon {
+        font-size: 1.25rem; /* Adjust icon size for mobile */
+    }
+}
+
+
+
+/* Style for service titles and buttons on hover */
+.service-header:hover {
+    background-color: #b95c4d !important;  /* Change background color on hover */
+}
+
+.service-header h3, .service-header .btn {
+    transition: all 0.3s ease;  /* Smooth transition effect */
+}
+
+/* Text color change to white on hover */
+.service-header:hover h3,
+.service-header:hover .btn {
+    color: white !important;  /* Change text color to white */
+}
+
+/* Optional: Style for the type-toggle icon when hovered */
+.service-toggle-icon {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.service-header:hover .service-toggle-icon {
+    color: white;  /* Change the plus/minus icon color to white */
+}

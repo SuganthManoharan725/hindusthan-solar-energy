@@ -7660,7 +7660,8 @@ textarea.form-control-lg {
 }
 
 .lh-base {
-    line-height: 1.5 !important
+    line-height: 1.5 !important;
+    color:#324c5f;
 }
 
 .lh-lg {

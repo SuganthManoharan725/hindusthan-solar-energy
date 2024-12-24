@@ -872,3 +872,45 @@
 .service-header:hover .service-toggle-icon {
     color: white;  /* Change the plus/minus icon color to white */
 }
+
+.owl-carousel {
+    display: block; /* Ensure it's no longer a flex or carousel container */
+  }
+  
+  .owl-carousel-item {
+    display: block; /* Display as a regular block element */
+  }
+  
+
+  /** Portfolio **/
+
+  #sub-category-filters-solar-power-plant li {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--dark);
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+
+#sub-category-filters-solar-power-plant li:hover,
+#sub-category-filters-solar-power-plant li.active {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+
+#sub-category-filters-solar-water-heater li {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--dark);
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+
+#sub-category-filters-solar-water-heater li:hover,
+#sub-category-filters-solar-water-heater li.active {
+    color: var(--primary);
+    border-color: var(--primary);
+}

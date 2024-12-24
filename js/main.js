@@ -94,5 +94,52 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
     
+    
+
 })(jQuery);
+
+
+$(document).ready(function() {
+    // Handle main category filter click
+    $('#portfolio-flters li').click(function() {
+        var categoryFilter = $(this).data('filter');
+
+        // Reset sub-category filter visibility
+        $('#sub-category-filters-solar-power-plant').hide();
+        $('#sub-category-filters-solar-water-heater').hide();
+
+        // Handle "All" filter
+        if (categoryFilter === '*') {
+            // When 'All' is clicked, hide sub-category filters and show all items
+            $('.portfolio-item').show();
+        } else {
+            // Show the selected category and sub-category filters
+            $('#portfolio-flters li').removeClass('active');
+            $(this).addClass('active');
+            $('.portfolio-item').hide();
+            $(categoryFilter).show();
+
+            // If the selected category is Solar Power Plant, show its sub-categories
+            if (categoryFilter === '.solar-power-plant') {
+                $('#sub-category-filters-solar-power-plant').show();
+            }
+
+            // If the selected category is Solar Water Heater, show its sub-categories
+            else if (categoryFilter === '.solar-water-heater') {
+                $('#sub-category-filters-solar-water-heater').show();
+            }
+        }
+    });
+
+    // Handle sub-category filter click
+    $('#sub-category-filters-solar-power-plant li, #sub-category-filters-solar-water-heater li').click(function() {
+        var subCategoryFilter = $(this).data('filter');
+        
+        // Apply the sub-category filter
+        $('#sub-category-filters-solar-power-plant li, #sub-category-filters-solar-water-heater li').removeClass('active');
+        $(this).addClass('active');
+        $('.portfolio-item').hide();
+        $(subCategoryFilter).show();
+    });
+});
 

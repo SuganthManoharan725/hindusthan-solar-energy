@@ -315,6 +315,7 @@
     object-fit: cover; /* Ensure the image covers the area without distortion */
 }
 
+
 /* Hover effect */
 .portfolio-item:hover .portfolio-img::before {
     width: 51%;

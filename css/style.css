@@ -826,6 +826,7 @@
 /* Add margin between different service and types */
 .service-item, .type-item {
     margin-bottom: 1.5rem;
+    border-radius: 25px !important;
 }
 
 /* Additional Responsive Design for Mobile */
@@ -914,4 +915,9 @@
 #sub-category-filters-solar-water-heater li.active {
     color: var(--primary);
     border-color: var(--primary);
+}
+
+/**about **/
+.about_text {
+   color: #2a2727;
 }

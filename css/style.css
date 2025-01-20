@@ -639,15 +639,25 @@
 /** Company Name header **/
 
 @media only screen and (max-width: 768px) {
-    .text-primary {
+   .navbar .text-primary {
         font-size: 0.919rem; /* Increase font size slightly for tablets */
     }
+
+    .products .text-primary {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
 }
 
 /* Mobile View (portrait/landscape) */
 @media only screen and (max-width: 480px) {
-    .text-primary {
+    .navbar .text-primary {
         font-size: 0.919rem; /* Increase font size for mobile devices */
+    }
+    .products .text-primary {
+        font-size: 1.2rem;
+        font-weight: 600;
     }
 }
 
@@ -920,4 +930,64 @@
 /**about **/
 .about_text {
    color: #2a2727;
+}
+
+/** ministryststue **/ 
+.ministrystatue.img-fluid{
+    top: 25px !important;
+    position: absolute;
+    width: 25rem !important;
+    height: 11rem !important;
+    left: 6rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+.ministrystatue.img-fluid{
+    top: 132px !important;
+    position: absolute;
+    width: 24rem !important;
+    height: 12rem !important;
+    left: 5rem;
+}
+}
+
+@media only screen and (max-width: 700px) {
+    .ministrystatue.img-fluid{
+        top: 74px !important;
+        position: absolute;
+        width: 15rem !important;
+        height: 7rem !important;
+        left: 0rem;
+    } 
+}
+
+/**sincebatch **/ 
+.sincebatch.img-fluid{
+    top: 42px !important;
+    position: absolute;
+    width: 25rem !important;
+    height: 18rem !important;
+    right: 15rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+.sincebatch.img-fluid{
+    top: 132px !important;
+    position: absolute;
+    width: 24rem !important;
+    height: 12rem !important;
+    right: 5rem;
+}
+}
+
+@media only screen and (max-width: 700px) {
+    .sincebatch.img-fluid{
+        top: 100px !important;
+        position: absolute;
+        width: 10rem !important;
+        height: 10rem !important;
+        right: 0rem;
+    } 
 }

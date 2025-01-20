@@ -7719,7 +7719,8 @@ textarea.form-control-lg {
 
 .text-primary {
     color: #4a4545 !important;
-    font-size: large;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .text-secondary {

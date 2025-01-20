@@ -626,12 +626,23 @@
     width: 150px;
 }
 
+/* .logo-partner-row img {
+    margin: 0 30px;
+    height: 150px;
+    width: 150px;
+}
+
+.logo-partner-row {
+    display: flex;
+    animation: scroll 10s linear infinite;
+} */
+
 @keyframes scroll {
     0% {
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-700%);
     }
 }
 

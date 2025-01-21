@@ -199,6 +199,31 @@
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/page-header.webp) center center no-repeat;
     background-size: cover;
+    height: 30rem;
+}
+
+.page-header-about{
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/page-header-about.webp) center center no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.page-header-services {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/page-header-service.webp) center center no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.page-header-products {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/page-header-products.webp) center center no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.page-header-contact {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/page-header-contact.webp) center center no-repeat;
+    background-size: cover;
+    height: 30rem;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {

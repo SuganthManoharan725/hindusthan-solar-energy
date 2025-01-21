@@ -19,7 +19,7 @@ document.getElementById('subscribeBtn').addEventListener('click', function(event
     }, {
         headers: {
             'Content-Type': 'application/json',
-            'api-key': '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' // Replace with your Sendinblue API key
+            'api-key': '' // Replace with your Sendinblue API key
         }
     })
     .then(response => {
